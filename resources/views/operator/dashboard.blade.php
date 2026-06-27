@@ -20,6 +20,76 @@
             70% { box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); }
             100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
         }
+        
+    .leaflet-container { z-index: 1 !important; }
+
+    /* Botones suaves en negro elegante */
+    .btn-action-trigger {
+        transition: all 0.2s ease;
+        background: #111;
+        border: 1px solid #333;
+        color: #fff;
+    }
+
+    .btn-action-trigger:hover {
+        background: #1a1a1a;
+    }
+
+    .btn-action-trigger:active {
+        transform: scale(0.97);
+        filter: brightness(0.9);
+    }
+
+    /* Pulso elegante (gris/blanco) */
+    .pulse-emerald {
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+        animation: pulse-gps 1.8s infinite;
+    }
+
+    @keyframes pulse-gps {
+        0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.3); }
+        70% { box-shadow: 0 0 0 12px rgba(255,255,255,0); }
+        100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+    }
+
+    /* Fondo general elegante */
+    body {
+        background: #0b0b0b;
+        color: #e5e5e5;
+    }
+
+    /* Paneles */
+    .bg-slate-900\/80,
+    .bg-slate-900,
+    .bg-gradient-to-br,
+    .bg-slate-950 {
+        background: #0f0f0f !important;
+        border-color: #2a2a2a !important;
+    }
+
+    /* Textos suaves */
+    .text-slate-100 { color: #f5f5f5 !important; }
+    .text-slate-400 { color: #a3a3a3 !important; }
+
+    /* Badge ruta elegante */
+    .bg-emerald-500\/10 {
+        background: #111 !important;
+        border: 1px solid #333 !important;
+        color: #fff !important;
+    }
+
+    /* Camión más limpio */
+    .truck-clean {
+        filter: grayscale(100%);
+    }
+
+    /* Leaflet control oscuro */
+    .leaflet-control-zoom a {
+        background: #111 !important;
+        color: #fff !important;
+        border: 1px solid #333 !important;
+    }
+
     </style>
 
     <div class="py-6 min-h-screen text-slate-100 selection:bg-indigo-500 flex items-start justify-center" style="background-color: #0b1329;">

@@ -21,6 +21,9 @@ Route::get('/', function () {
 })->name('home');
 
 // 🌐 Vista principal del Vecino (Ciudadano en su celular)
+Route::get('/vecino', [VecinoController::class, 'index'])->name('vecino.index');
+Route::get('/vecino/monitoreo', [VecinoController::class, 'monitoreo'])->name('vecino.monitoreo');
+Route::get('/vecino/horarios', [VecinoController::class, 'horarios'])->name('vecino.horarios');
 Route::get('/monitoreo-ciudadano', [VecinoController::class, 'index'])->name('vecinos.index');
 
 // ⚙️ APIs de soporte Técnico (Consumidas por el JavaScript del mapa público)
